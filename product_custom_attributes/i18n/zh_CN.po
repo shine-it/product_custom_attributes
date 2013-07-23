@@ -1,0 +1,293 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_custom_attributes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-08 07:07+0000\n"
+"PO-Revision-Date: 2013-04-08 07:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Binary"
+msgstr "二进制"
+
+#. module: product_custom_attributes
+#: model:ir.actions.act_window,name:product_custom_attributes.product_attribute_form_action
+#: model:ir.ui.menu,name:product_custom_attributes.menu_product_attribute_action
+msgid "Product Attributes"
+msgstr "产品属性"
+
+#. module: product_custom_attributes
+#: view:product.attribute:0
+msgid "Search Product Attributes"
+msgstr "搜索产品属性"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_option_relation
+#: field:product.attribute,option_relation:0
+msgid "Relation"
+msgstr "关系"
+
+#. module: product_custom_attributes
+#: view:attribute.group:0
+#: field:attribute.location,attribute_group_id:0
+#: model:ir.model,name:product_custom_attributes.model_attribute_group
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_location_attribute_group_id
+msgid "Attribute Group"
+msgstr "属性组"
+
+#. module: product_custom_attributes
+#: field:attribute.group,attribute_set_id:0
+#: field:attribute.location,attribute_set_id:0
+#: view:attribute.set:0
+#: model:ir.model,name:product_custom_attributes.model_attribute_set
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_group_attribute_set_id
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_location_attribute_set_id
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_product_attribute_set_id
+#: field:product.product,attribute_set_id:0
+msgid "Attribute Set"
+msgstr "属性集"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Many2One"
+msgstr "Many2One"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_product_attribute_custom_variant
+#: field:product.product,attribute_custom_variant:0
+msgid "Custom Variant Attributes"
+msgstr ""
+
+#. module: product_custom_attributes
+#: view:attribute.group:0
+msgid "Search Attribute Groups"
+msgstr "搜索属性组"
+
+#. module: product_custom_attributes
+#: field:attribute.location,attribute_id:0
+#: field:attribute.option,attribute_id:0
+#: model:ir.model,name:product_custom_attributes.model_product_attribute
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_location_attribute_id
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_option_attribute_id
+#: view:product.attribute:0
+msgid "Product Attribute"
+msgstr "产品属性"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,based_on:0
+msgid "Product Variant"
+msgstr ""
+
+#. module: product_custom_attributes
+#: view:attribute.set:0
+#: field:attribute.set,attribute_group_ids:0
+#: model:ir.actions.act_window,name:product_custom_attributes.attribute_group_form_action
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_set_attribute_group_ids
+#: model:ir.ui.menu,name:product_custom_attributes.menu_attribute_group_action
+msgid "Attribute Groups"
+msgstr "属性组"
+
+#. module: product_custom_attributes
+#: model:ir.model,name:product_custom_attributes.model_product_product
+msgid "Product"
+msgstr "产品"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_template_attribute_custom_tmpl
+#: field:product.template,attribute_custom_tmpl:0
+msgid "Custom Template Attributes"
+msgstr "Custom Template Attributes"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_attribute_type
+#: field:product.attribute,attribute_type:0
+msgid "Type"
+msgstr "类型"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_create_date
+#: field:product.attribute,create_date:0
+msgid "Created date"
+msgstr "创建日期"
+
+#. module: product_custom_attributes
+#: view:attribute.set:0
+msgid "Search Attribute Sets"
+msgstr "搜索产品属性集"
+
+#. module: product_custom_attributes
+#: view:attribute.option:0
+#: model:ir.model,name:product_custom_attributes.model_attribute_option
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_option_ids
+#: field:product.attribute,option_ids:0
+msgid "Attribute Option"
+msgstr "属性选项"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Date"
+msgstr "日期"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Integer"
+msgstr "整型"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_field_id
+#: field:product.attribute,field_id:0
+msgid "Ir Model Fields"
+msgstr "Ir Model 字段"
+
+#. module: product_custom_attributes
+#: field:attribute.group,name:0
+#: field:attribute.option,name:0
+#: field:attribute.set,name:0
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_group_name
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_option_name
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_set_name
+msgid "Name"
+msgstr "名字"
+
+#. module: product_custom_attributes
+#: model:ir.model,name:product_custom_attributes.model_ir_model_fields
+msgid "Fields"
+msgstr "字段"
+
+#. module: product_custom_attributes
+#: model:ir.actions.act_window,name:product_custom_attributes.attribute_option_form_action
+#: model:ir.ui.menu,name:product_custom_attributes.menu_attribute_option_action
+#: view:product.attribute:0
+msgid "Attribute Options"
+msgstr "属性选项"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_serialized
+#: field:product.attribute,serialized:0
+msgid "Field serialized"
+msgstr "序列化字段"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Many2Many"
+msgstr "Many2Many"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Multiselect"
+msgstr "多选"
+
+#. module: product_custom_attributes
+#: view:attribute.option:0
+msgid "Search Attribute Options"
+msgstr "搜索产品属性选项"
+
+#. module: product_custom_attributes
+#: field:attribute.group,sequence:0
+#: field:attribute.location,sequence:0
+#: field:attribute.option,sequence:0
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_group_sequence
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_location_sequence
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_option_sequence
+msgid "Sequence"
+msgstr "序列"
+
+#. module: product_custom_attributes
+#: field:attribute.group,attribute_ids:0
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_group_attribute_ids
+#: model:ir.ui.menu,name:product_custom_attributes.menu_attribute_in_config_stock_product
+msgid "Attributes"
+msgstr "属性"
+
+#. module: product_custom_attributes
+#: view:attribute.group:0
+#: view:attribute.location:0
+#: view:attribute.set:0
+#: model:ir.model,name:product_custom_attributes.model_attribute_location
+msgid "Attribute Location"
+msgstr "属性位置"
+
+#. module: product_custom_attributes
+#: model:ir.actions.act_window,name:product_custom_attributes.attribute_set_form_action
+#: model:ir.ui.menu,name:product_custom_attributes.menu_attribute_set_action
+msgid "Attribute Sets"
+msgstr "属性集"
+
+#. module: product_custom_attributes
+#: model:ir.model,name:product_custom_attributes.model_product_template
+#: selection:product.attribute,based_on:0
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Text"
+msgstr "文本"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Float"
+msgstr "浮点"
+
+#. module: product_custom_attributes
+#: help:product.attribute,serialized:0
+msgid "If serialized, the field will be stocked in the serialized field: attribute_custom_tmpl or attribute_custom_variant depending on the field based_on"
+msgstr "如果是序列化，此字段将会根据基于的类别储存在序列化字段attribute_custom_tmpl或者attribute_custom_variant里。"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Datetime"
+msgstr "日期时间"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Char"
+msgstr "字符"
+
+#. module: product_custom_attributes
+#: view:attribute.location:0
+msgid "Search Attribute Locations"
+msgstr "搜索属性位置"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Boolean"
+msgstr "布尔类型"
+
+#. module: product_custom_attributes
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_based_on
+#: field:product.attribute,based_on:0
+msgid "Based on"
+msgstr "基于"
+
+#. module: product_custom_attributes
+#: model:ir.actions.act_window,name:product_custom_attributes.attribute_location_form_action
+#: model:ir.ui.menu,name:product_custom_attributes.menu_attribute_location_action
+msgid "Attribute Locations"
+msgstr "属性位置"
+
+#. module: product_custom_attributes
+#: sql_constraint:ir.model.fields:0
+msgid "The name of the field has to be uniq for a given model !"
+msgstr "模型里面的字段的名字必须是唯一的 !"
+
+#. module: product_custom_attributes
+#: model:ir.model,name:product_custom_attributes.model_open_product_by_attribute_set
+msgid "Wizard to open product by attributes set"
+msgstr "Wizard to open product by attributes set"
+
+#. module: product_custom_attributes
+#: selection:product.attribute,attribute_type:0
+msgid "Select"
+msgstr "选择"
+
