@@ -4,11 +4,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 7.0\n"
+"Project-Id-Version: OpenERP Server 7.0-20130914-231052\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-08 07:07+0000\n"
-"PO-Revision-Date: 2013-04-08 07:07+0000\n"
-"Last-Translator: <>\n"
+"POT-Creation-Date: 2013-09-18 14:31+0000\n"
+"PO-Revision-Date: 2013-09-18 14:31+0000\n"
+"Last-Translator: Wei 'oldrev' Li <liwei@sandwych.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,9 +27,10 @@ msgid "Product Attributes"
 msgstr "产品属性"
 
 #. module: product_custom_attributes
-#: view:product.attribute:0
-msgid "Search Product Attributes"
-msgstr "搜索产品属性"
+#: code:addons\product_custom_attributes\product.py:55
+#, python-format
+msgid "Please choose an attribute set before opening the product attributes"
+msgstr "请在打开产品属性前选择一个属性集"
 
 #. module: product_custom_attributes
 #: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_option_relation
@@ -46,27 +47,29 @@ msgid "Attribute Group"
 msgstr "属性组"
 
 #. module: product_custom_attributes
-#: field:attribute.group,attribute_set_id:0
-#: field:attribute.location,attribute_set_id:0
+#: view:attribute.group:0
+#: view:attribute.location:0
 #: view:attribute.set:0
-#: model:ir.model,name:product_custom_attributes.model_attribute_set
-#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_group_attribute_set_id
-#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_location_attribute_set_id
-#: model:ir.model.fields,field_description:product_custom_attributes.field_product_product_attribute_set_id
-#: field:product.product,attribute_set_id:0
-msgid "Attribute Set"
-msgstr "属性集"
+#: model:ir.model,name:product_custom_attributes.model_attribute_location
+msgid "Attribute Location"
+msgstr "属性位置"
 
 #. module: product_custom_attributes
 #: selection:product.attribute,attribute_type:0
 msgid "Many2One"
-msgstr "Many2One"
+msgstr "多对一"
 
 #. module: product_custom_attributes
 #: model:ir.model.fields,field_description:product_custom_attributes.field_product_product_attribute_custom_variant
 #: field:product.product,attribute_custom_variant:0
 msgid "Custom Variant Attributes"
-msgstr ""
+msgstr "自定义产品变体属性"
+
+#. module: product_custom_attributes
+#: code:addons\product_custom_attributes\product.py:114
+#, python-format
+msgid "Custom Attributes"
+msgstr "自定义属性"
 
 #. module: product_custom_attributes
 #: view:attribute.group:0
@@ -86,7 +89,7 @@ msgstr "产品属性"
 #. module: product_custom_attributes
 #: selection:product.attribute,based_on:0
 msgid "Product Variant"
-msgstr ""
+msgstr "Product Variant"
 
 #. module: product_custom_attributes
 #: view:attribute.set:0
@@ -106,7 +109,7 @@ msgstr "产品"
 #: model:ir.model.fields,field_description:product_custom_attributes.field_product_template_attribute_custom_tmpl
 #: field:product.template,attribute_custom_tmpl:0
 msgid "Custom Template Attributes"
-msgstr "Custom Template Attributes"
+msgstr "自定义产品模板属性"
 
 #. module: product_custom_attributes
 #: model:ir.model.fields,field_description:product_custom_attributes.field_product_attribute_attribute_type
@@ -132,6 +135,12 @@ msgstr "搜索产品属性集"
 #: field:product.attribute,option_ids:0
 msgid "Attribute Option"
 msgstr "属性选项"
+
+#. module: product_custom_attributes
+#: code:addons\product_custom_attributes\product.py:55
+#, python-format
+msgid "User Error"
+msgstr "用户错误"
 
 #. module: product_custom_attributes
 #: selection:product.attribute,attribute_type:0
@@ -160,9 +169,20 @@ msgid "Name"
 msgstr "名字"
 
 #. module: product_custom_attributes
+#: help:product.attribute,serialized:0
+msgid "If serialized, the field will be stocked in the serialized field: attribute_custom_tmpl or attribute_custom_variant depending on the field based_on"
+msgstr "如果是序列化，此字段将会根据基于的类别储存在序列化字段attribute_custom_tmpl或者attribute_custom_variant里。"
+
+#. module: product_custom_attributes
 #: model:ir.model,name:product_custom_attributes.model_ir_model_fields
 msgid "Fields"
 msgstr "字段"
+
+#. module: product_custom_attributes
+#: code:addons\product_custom_attributes\product_attribute.py:95
+#, python-format
+msgid "The field serialized should be ticked for a multiselect field !"
+msgstr "The field serialized should be ticked for a multiselect field !"
 
 #. module: product_custom_attributes
 #: model:ir.actions.act_window,name:product_custom_attributes.attribute_option_form_action
@@ -180,7 +200,7 @@ msgstr "序列化字段"
 #. module: product_custom_attributes
 #: selection:product.attribute,attribute_type:0
 msgid "Many2Many"
-msgstr "Many2Many"
+msgstr "多对多"
 
 #. module: product_custom_attributes
 #: selection:product.attribute,attribute_type:0
@@ -210,18 +230,21 @@ msgid "Attributes"
 msgstr "属性"
 
 #. module: product_custom_attributes
-#: view:attribute.group:0
-#: view:attribute.location:0
-#: view:attribute.set:0
-#: model:ir.model,name:product_custom_attributes.model_attribute_location
-msgid "Attribute Location"
-msgstr "属性位置"
-
-#. module: product_custom_attributes
 #: model:ir.actions.act_window,name:product_custom_attributes.attribute_set_form_action
 #: model:ir.ui.menu,name:product_custom_attributes.menu_attribute_set_action
 msgid "Attribute Sets"
 msgstr "属性集"
+
+#. module: product_custom_attributes
+#: view:product.attribute:0
+msgid "Search Product Attributes"
+msgstr "搜索产品属性"
+
+#. module: product_custom_attributes
+#: code:addons\product_custom_attributes\product_attribute.py:95
+#, python-format
+msgid "Create Error"
+msgstr "创建错误"
 
 #. module: product_custom_attributes
 #: model:ir.model,name:product_custom_attributes.model_product_template
@@ -240,9 +263,16 @@ msgid "Float"
 msgstr "浮点"
 
 #. module: product_custom_attributes
-#: help:product.attribute,serialized:0
-msgid "If serialized, the field will be stocked in the serialized field: attribute_custom_tmpl or attribute_custom_variant depending on the field based_on"
-msgstr "如果是序列化，此字段将会根据基于的类别储存在序列化字段attribute_custom_tmpl或者attribute_custom_variant里。"
+#: field:attribute.group,attribute_set_id:0
+#: field:attribute.location,attribute_set_id:0
+#: view:attribute.set:0
+#: model:ir.model,name:product_custom_attributes.model_attribute_set
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_group_attribute_set_id
+#: model:ir.model.fields,field_description:product_custom_attributes.field_attribute_location_attribute_set_id
+#: model:ir.model.fields,field_description:product_custom_attributes.field_product_product_attribute_set_id
+#: field:product.product,attribute_set_id:0
+msgid "Attribute Set"
+msgstr "属性集"
 
 #. module: product_custom_attributes
 #: selection:product.attribute,attribute_type:0
@@ -280,11 +310,6 @@ msgstr "属性位置"
 #: sql_constraint:ir.model.fields:0
 msgid "The name of the field has to be uniq for a given model !"
 msgstr "模型里面的字段的名字必须是唯一的 !"
-
-#. module: product_custom_attributes
-#: model:ir.model,name:product_custom_attributes.model_open_product_by_attribute_set
-msgid "Wizard to open product by attributes set"
-msgstr "Wizard to open product by attributes set"
 
 #. module: product_custom_attributes
 #: selection:product.attribute,attribute_type:0
