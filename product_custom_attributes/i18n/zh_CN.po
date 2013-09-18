@@ -89,7 +89,7 @@ msgstr "产品属性"
 #. module: product_custom_attributes
 #: selection:product.attribute,based_on:0
 msgid "Product Variant"
-msgstr "Product Variant"
+msgstr "产品变体"
 
 #. module: product_custom_attributes
 #: view:attribute.set:0
@@ -182,7 +182,7 @@ msgstr "字段"
 #: code:addons\product_custom_attributes\product_attribute.py:95
 #, python-format
 msgid "The field serialized should be ticked for a multiselect field !"
-msgstr "The field serialized should be ticked for a multiselect field !"
+msgstr "多选类型的字段必须标记为序列化字段！"
 
 #. module: product_custom_attributes
 #: model:ir.actions.act_window,name:product_custom_attributes.attribute_option_form_action
